@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+    <title>form page 1</title>
+
+<style>
+
+  body{
+
+      padding: 0%;
+      margin: 0%;
+      background-color: #33495e;
+  }
+  .A{
+
+     margin-top: 3%;
+     margin-left: 10%;
+     margin-right: 10%;
+
+  }
+  .B{
+
+     border: 2px solid aqua;
+     background-color: black;
+     height: auto;
+     padding-top: 1%;
+     padding-left: 1%;
+     padding-right: 1%;
+     padding-bottom: 1%;
+
+  }
+
+  .B input{
+
+      border-radius: 24px;
+      border: 3px solid green;
+      background-color: black;
+      color: cornsilk;
+  }
+  .B label{
+
+      color: cyan;
+
+  }
+
+  .B h1:hover{
+
+      background-color: aqua;
+
+  }
+</style>
+
+
+</head>
+
+<body>
+    
+   
+     
+    <div class="container-fluid">
+
+        <div class="A">
+
+                 <div class="B">
+
+                    <h1 style="font-size: 80px; color: darkgreen;" class="text-center mb-5">$ GAME ZONE $</h1>            
+
+                    <form>
+                        <div class="form-row">
+                          <div class="col">
+                            <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+                          </div>
+                          <div class="col">
+                            <input type="password" class="form-control" placeholder="Enter password" name="pswd">
+                          </div>
+                        </div>
+                    </form>
+
+  <br><br>
+                    <form class="form-inline" action="/action_page.php">
+                        <label for="name" class="mr-sm-2">name:</label>
+                        <input type="text" class="form-control mb-2 mr-sm-2" placeholder="user name" id="name">
+                        <label for="gun" class="mr-sm-2">gun name:</label>
+                        <input type="text" class="form-control mb-2 mr-sm-2" placeholder="gun type" id="gun">
+                        <div class="form-check mb-2 mr-sm-2">
+                          <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"> Remember me
+                          </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                       
+                      </form>
+
+                   
+   <br><br>
+
+                      <form action="/action_page.php" class="was-validated">
+                        <div class="form-group">
+                          <label for="uname">Username:</label>
+                          <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                          <div class="valid-feedback">Valid.</div>
+                          <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-group">
+                          <label for="pwd">Password:</label>
+                          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                          <div class="valid-feedback">Valid.</div>
+                          <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-group form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Check this checkbox to continue.</div>
+                          </label>
+
+                        </div>
+                      </form> 
+   <br><br>                  
+
+                        <form  action="/action_page.php" class="was-validated">
+
+                        <div class="text-center">
+                           <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">click me for new form</button>
+                                    <div id="demo" class="collapse">
+
+                                        <div class="spinner-border text-success my-2"></div>
+                                          <h2 style="color: cyan;">Form Validation</h2>
+                                         <p style="color: cyan;">In this example, we use <code style="color: cyan;">.was-validated</code> to indicate what's missing before submitting the form:</p>
+  
+                                                <div class="form-group">
+                                            <label for="uname">Username:</label>
+                                                  <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                                                <div class="valid-feedback">Valid.</div>
+                                                <div class="invalid-feedback">Please fill out this field.</div>
+                                                </div>
+                                                <div class="form-group">
+                                            <label for="pwd">Password:</label>
+                                                   <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                                                  <div class="valid-feedback">Valid.</div>
+                                                  <div class="invalid-feedback">Please fill out this field.</div>
+                                                </div>
+                                                <div class="form-group form-check">
+                                            <label class="form-check-label">
+                                                  <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+                                                 <div class="valid-feedback">Valid.</div>
+                                                 <div class="invalid-feedback">Check this checkbox to continue.</div>
+                                            </label>
+                                                </div>
+                                                  <button type="submit" class="btn btn-primary">Submit</button>           
+
+                                    </div>
+
+                        </div> 
+
+                        </form>
+                        
+                        
+ <br><br>
+
+
+    <div class="text-center">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        Contact us
+      </button>
+    
+      <!-- The Modal -->
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">contact:-</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+              <h3>+91 0000000000</h3>
+              <h5>Address:-</h5>
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+               Repellat unde eius quibusdam autem et nesciunt accusantium
+               inventore adipisci amet eum quidem aspernatur aliquid quis eos, harum corrupti facilis culpa repudiandae!</p>
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <br><br> 
+
+                 </div>
+
+        </div>
+
+
+
+    </div>
+
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
